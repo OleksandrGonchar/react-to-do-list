@@ -1,0 +1,13 @@
+.category-item {
+    display: flex;
+    padding: 5px;
+    border: 1px solid #999;
+
+    & > span {
+        flex-basis: 50%;
+
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+}

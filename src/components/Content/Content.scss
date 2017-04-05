@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+}
+
+.content-column {
+    flex-basis: 50%;
+    border: 1px solid #333;
+}

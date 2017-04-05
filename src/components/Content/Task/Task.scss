@@ -1,0 +1,14 @@
+.task {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.task-header {
+    
+}
+
+.task-content {
+    flex-grow: 1;
+    overflow-y: scroll; 
+}
