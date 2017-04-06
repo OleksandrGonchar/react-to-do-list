@@ -14,4 +14,14 @@
     bottom: 3px;
     right: 4px;
     border: 1px solid #555;
+
+    & > span {
+        transform: rotate(45deg);
+    }
+}
+
+.search__show-done {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
 }

@@ -14,7 +14,6 @@ export default class Task extends Component {
                     </label>
                 </div>
                 <div className='task-content'>
-                    content
                     <ToDoItem />
                 </div>
             </div>

@@ -4,7 +4,7 @@ import './ToDoItem.scss';
 export default class ToDoItem extends Component {
     handleClick = () => {
         console.log('this is:', this);
-    }
+    };
 
     render() {    
         let items = ['1', '2', '3', '4'];
@@ -16,8 +16,8 @@ export default class ToDoItem extends Component {
                         <label className='to-do-item'> 
                             <input type='checkbox' />
                             <span>To-Do Item # {item}</span>
-                            <button onClick={(e) => this.handleClick(e)}>
-                                Edit Button
+                            <button className='to-do-item__edit-btn' onClick={(e) => this.handleClick(e)}>
+                                <span className='icon-edit'></span>
                             </button>
                         </label>
                     </div>
