@@ -1,22 +1,24 @@
-import React, {Component} from 'react';
-import './Category.scss';
+import React, { Component } from 'react';
+import './Category.css';
 
-import CategoryList from './CategoryList/CategoryList';
+import CategoryItem from './CategoryItem/CategoryItem'
 
-export default class Category extends Component {
-    render() {
-        return (
-            <div className='category'>
-                <div className='category-header'>
-                    <label className='category-input'>
-                        <input type='text' placeholder='Entry category title' />
-                        <input type='button' value='Add' />
-                    </label>
-                </div>
-                <div className='category-content'>
-                    <CategoryList />
-                </div>
+class Category extends Component {
+  render() {
+    const categoryList = ['1','2','3'];
+
+    return (
+      <div className="Category">
+       Category
+       
+        {categoryList.map(item => 
+            <div>
+                <CategoryItem  itemNumber={item}/> 
             </div>
-        )
-    }
+        )}
+      </div>
+    );
+  }
 }
+
+export default Category;
